@@ -1,30 +1,44 @@
 body {
   font-family: Futura, Helvetica, Arial, sans-serif;
   color: #444;
+  background-color: #d600ff;
 }
 
 h1 {
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 4rem;
+  /* font-style: italic; */
+  font-style: oblique;
+  color: #00ff9f;
+  /* animation-name: example;
+  animation-duration: 3s; */
 }
-
+/* @keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+} */
 #container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-#board{
+#board {
   border-collapse: collapse;
 }
 
-#board td{
-  border: 1px solid #ddd;
-  width: 18px;
-  height: 18px;
+#board td {
+  border: 3px solid purple;
+  width: 25px;
+  height: 25px;
 }
 
 td.alive {
-  background-color: #8CC8DD;
+  background-color: #00b8ff;
 }
 
 #control_panel {
@@ -34,17 +48,27 @@ td.alive {
 .button {
   padding: 0.85em 1em;
   border: 1px solid transparent;
-  border-radius: 3px;
-  font-size: 0.9em;
+
+  font-size: 1em;
+  border-radius: 0.5rem;
   text-align: center;
-  background-color: #2ba6cb;
-  color: #fefefe; 
+  background-color: #001eff;
+  color: #fefefe;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #258dad;
 }
 
 .button:focus {
   outline: dashed 1px #2ba6cb;
+}
+
+#footer {
+  color: #00ff9f;
+}
+
+#footer a {
+  color: white;
 }
